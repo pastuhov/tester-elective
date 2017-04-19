@@ -14,6 +14,16 @@
     ],
     "minimum-stability": "dev",
     "require": {},
+    "autoload": {
+      "psr-4": {
+        "pastuhov\\testerelective\\": "src"
+      }
+    },
+    "autoload-dev": {
+      "psr-4": {
+        "pastuhov\\testerelectiv\\tests\\": "tests"
+      }
+    },
     "scripts": {
     	"test": "./vendor/bin/phpunit"
     }
