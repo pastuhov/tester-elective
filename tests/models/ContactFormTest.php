@@ -9,6 +9,12 @@ class ContactFormTest extends TestCase
 	public function testCreateObject()
 	{
 		$foo = new ContactForm();
-		echo 'ok';
+
+		$foo->name = 'kirill';
+		$foo->phone = '+79049820930';
+		$foo->message = 'hello!';
+
+		$this->assertTrue($foo->validate());
+
 	}
 }
